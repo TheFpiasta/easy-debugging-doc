@@ -9,6 +9,8 @@
       * [Add a new Debug Configuration](#add-a-new-debug-configuration)
       * [Select or Add a new Web Server](#select-or-add-a-new-web-server)
     * [Grand finale](#grand-finale)
+  * [Troubleshooting](#troubleshooting)
+    * [Brakepoints dont breake](#brakepoints-dont-breake)
 <!-- TOC -->
 
 <!-- How to enable Debugging with PHP (Laravel), PHPStorm and vagrant (Homestead)? -->
@@ -39,7 +41,7 @@ version 8.2.x. If you are using a different version, adjust "8.2" in the command
 sudo nano /etc/php/8.2/mods-available/xdebug.ini
 ````
 
-I don't know if all config parameters are needed, but this is what my config looks like: (never toutch a running
+I don't know if all config parameters are needed, but this is what my config looks like: (never touch a running
 system :D)
 
 ````text
@@ -119,17 +121,24 @@ Now you can save the settings and close the Servers window.
 
 ### Grand finale
 
-If you have selected our existing or new created server in the ``Run / Debug Configurations`` window, ou can save the
+If you have selected our existing or new created server in the ``Run / Debug Configurations`` window, you can save the
 new ``PHP WEb Page`` configuration and close the window.
 
 Congratulations! You have now a working Debugger! :D
 
-Add a breakpoint and start the new debugging configuration in ``Debugg`` mode.
+Add a breakpoint and start the new debugging configuration in ``Debugg`` mode. Don't forget to activate the debugging listener. :P
 
 Happy Debugging!
 
+## Troubleshooting
+
+### Breakpoints don't break
+
+- Try to install the [Xdebug helper](https://chromewebstore.google.com/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc) extension in your browser.
+- Check, if the browser don't block the page Cookies (blocking third para cookies is on most cases ok). The debugging session will be handled by page cookies.
+
 ---
 
-Debugging
+~ Debugging
 
 1. Being the detective in a crime movie where you are also the murderer.
