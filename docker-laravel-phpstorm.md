@@ -67,3 +67,4 @@ If you have mapped the server correctly, you should now ready to debug your code
 - If you xdebug use a different port then the default 9003 port in the php.ini, make sure you have add this port to PHP Storm (PHP > Debug > Debug Port).
 - Make sure you have chosen the correct PHP CLI interpreter in PHPStorm (PHP > CLI Interpreter). This should be the CLI Interpreter of the docker container.
 - Check the server Mapping (PHP > Servers). They should be like: `Host: _`, `Port: 80`, `Debugger: Xdebug`, `Use path mappings: checked`. The path mapping should be like: `LOCAL DIR` to `DOCKER DIR`.
+- If the popup for server configuration don't come, try to delete all existing server configurations.
